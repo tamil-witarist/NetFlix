@@ -1,38 +1,172 @@
-.App {
-  text-align: center;
+#App{
+  margin: 0px;
+  padding: 0px;
+  height: 150%;
+  box-sizing: border-box;
+  background-color: rgb(8, 8, 66);
+  background-image: url("https://wallpaperaccess.com/full/329583.jpg");
+  background-repeat:no-repeat; 
+  background-size: contain;
+  opacity: 3 ;
+  cursor: pointer;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header{
+  display:flex;
+  justify-content: space-between;
+  padding: 30px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.select{
+  width: 140px;
+  height: 35px;
+  margin: 10px;
+  background-color: transparent;
+  color: white;
+  border: 1px white solid;
+  padding-left:10px;
+  padding-right:10px;
+  border-radius: 5px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.option{
+  color: black;
+}
+.Signin-btn{
+   background-color: rgb(248, 56, 22);
+   color: white;
+   width: 80px;
+   height: 35px;
+   margin: 10px;
+   border-radius: 5px;
+   border: none;
+}
+#netlify-icon{
+   font-size: 50px;
+   color: red;
+   letter-spacing: 4px;
+   /* transform: translateX(-4em); */
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.content-one{
+  width: 70%;
+  font-size: 4rem;
+  font-weight: 800;
+  color: rgb(240, 233, 233);
+}
+.content-two{
+  width: 70%;
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  margin: 5px;
+}
+.content-three{
+  font-size: 1em;
+  color: white;
+  margin: 5px;
+}
+.main-input,input{
+  width: 400px;
+  height: 46px;
+  color: white;
+  border-color: white;
+  place-content: white;
+  background-color: rgba(88, 87, 87, 0.527);
+  font-size: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 5px;
+  border-radius: 4px;
+  opacity: 2;
+}
+.getStarted-btn{
+  width: 180px;
+  height: 52px;
+  background-color: rgb(245, 24, 24);
+  border: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+}
+.getStarted-btn:hover{
+  background-color: rgb(207, 24, 24);
+}
+.main{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content:left ;
+  padding:10% 10%;
+  letter-spacing: 0.7px;
+  flex-wrap: wrap;
+}
+#design-box-container{
+  display:grid;
+  grid-template-columns: repeat(auto-fill,250px);
+  grid-column-gap: 30px;
+  justify-content: space-around;
+  align-self: center;
+  padding: 30px;
+  opacity: 0.9;
+}
+.design-box{
+  border: 2px solid rgb(90, 1, 90);
+  padding: 25px 15px 25px 15px;
+  border-radius: 10px;
   color: white;
+  background:linear-gradient(120deg,purple,blue);
 }
-
-.App-link {
-  color: #61dafb;
+.design-box:hover{
+  box-shadow: 0px 0px 30px white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.design-title{
+  font-size: 2rem;
+  font-weight: 600;
+}
+.design-content{
+  font-size: 1rem;
+}
+#question-head{
+  font-size: 45px;
+  padding-left: 8%;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+#question-query{
+  display:flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.click{
+  width: 100%;
+  font-weight: 600;
+  background-color: rgb(45, 45, 153);
+  font-size: 18px;
+  padding: 20px 20px;
+  margin: 1px;
+}
+.plus{
+  font-size: 28px;
+}
+/* .span{
+  display:none;
+} */
+.click{
+  display: flex;
+  justify-content: space-between;
+}
+#bottom-btn{
+  padding-left: 8%;
+}
+.link-tags{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,280px);
+  padding:5% 8%;
+  grid-row-gap: 5px;
+}
+div a{
+  color:white;
 }
