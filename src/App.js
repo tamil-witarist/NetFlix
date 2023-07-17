@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState} from "react";
+import { useState,useEffect} from "react";
 function App() {
   const [one, setOne] = useState(false);
   const [two, setTwo] = useState(false);
@@ -30,6 +30,10 @@ function App() {
   //   setBg(image[i])
   //   console.log(bg)
   // }
+
+  useEffect(()=>{
+    console.log("Hello Am the edited Message")
+  },[])
   const boxes = [
     {
       url: "https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/cards/pictogram/tv.svg",
@@ -55,7 +59,7 @@ function App() {
       content: "Save your favourites easily and always have something to watch."
     }
   ];
-
+   
   const handleClickone = () => {
     setOne(!one);
   };
